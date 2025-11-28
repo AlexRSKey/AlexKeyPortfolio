@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        .carousel-container {
+            position: relative;
+            max-width: 700px;
+            margin: 40px auto;
+        }
+        .carousel-container img {
+            width: 100%;
+            border-radius: 12px;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            border: none;
+            color: white;
+            font-size: 30px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .arrow:hover {
+            background: rgba(0,0,0,0.7);
+        }
+        .left { left: 10px; }
+        .right { right: 10px; }
+        .caption {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project 1</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="mobile-menu" class="hidden">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="carousel-container">
+            <button class="arrow left" onclick="prevProjectImage('project1')">&#10094;</button>
+            <img id="project1-image" src="images/project1-img1.jpg" alt="Project 1 Image">
+            <button class="arrow right" onclick="nextProjectImage('project1')">&#10095;</button>
+        </div>
+        <div id="project1-caption" class="caption">Caption for Project 1 Image 1</div>
+    </div>
+
+    <footer>
+        <p>© 2025 Alex Key</p>
+    </footer>
+</body>
+</html>

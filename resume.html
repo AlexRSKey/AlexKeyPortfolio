@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Resume</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="mobile-menu" class="hidden">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Upload Your Resume (PDF)</h2>
+        <input type="file" id="resumeUpload" accept="application/pdf" onchange="displayPDF()" />
+
+        <div id="pdfViewer" class="pdf-viewer hidden">
+            <iframe id="pdfFrame" width="100%" height="600px"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Alex Key</p>
+    </footer>
+</body>
+</html>

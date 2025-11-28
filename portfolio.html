@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .project-block {
+            background: white;
+            width: 250px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+        .project-block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="mobile-menu" class="hidden">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <a href="project1.html" class="project-block">Project 1</a>
+            <a href="project2.html" class="project-block">Project 2</a>
+            <a href="project3.html" class="project-block">Project 3</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Alex Key</p>
+    </footer>
+</body>
+</html>
