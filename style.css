@@ -109,6 +109,7 @@ span {
   font-size: 25px;
   line-height: 1;
   text-shadow: 0 4px 12px rgba(0,0,0,0.75);
+  font-family: 'Lato', sans-serif;
 }
 
 /* Banner backgrounds for specific project pages */
@@ -238,26 +239,35 @@ body.clock header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
     text-decoration: none;
     border-radius: 12px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: relative;       /* stacking context for overlay and text */
+    z-index: 0;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .project-block::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.4); /* dark overlay for readability */
+    background: rgba(0,0,0,0.4); /* dark overlay */
     border-radius: 12px;
+    z-index: 1;                  /* stays behind text */
 }
-.project-block span {
+
+.project-block .project-text {
     position: relative;
-    z-index: 1; /* ensures text is above overlay */
+    z-index: 2;                  /* ensures text is above overlay */
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+    text-align: center;
 }
 .project-block:hover {
     transform: scale(1.05);
