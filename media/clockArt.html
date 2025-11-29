@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Art Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="clock">
+    <header>
+        <!-- Back arrow to home page -->
+        <div class="back-arrow">
+            <a href="index.html">← Home</a>
+        </div>
+        <h1>Clock Art Project</h1>
+    </header>
+
+    <!-- Project Details -->
+    <div class="container">
+        <div class="section-text">
+            <p>One of my earliest experiences with a major CNC machining project was for the clock in my Studio Art class at the North Carolina School of Science and Math. This was a solo project.</p>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container">
+        <div class="carousel-container"
+            data-carousel
+            data-images='[
+                "media/ClockArtProject/IMG_3612.jpg",
+                "media/ClockArtProject/IMG_3573.jpg",
+                "media/ClockArtProject/IMG_3361.jpg",
+                "media/ClockArtProject/IMG_3659.jpg",
+                "media/ClockArtProject/IMG_3663.jpg",
+                "media/ClockArtProject/IMG_3688.jpg",
+                "media/ClockArtProject/IMG_3662.jpg",
+                "media/ClockArtProject/FinalPiece.png"
+            ]'
+            data-captions='[
+                "The first step in this project was drafting ideas. The original plan had been to build a statue sitting on a clock, thought these drawings were drafted before learning how tight the space was where I&#39d be displaying the piece. I knew from the beginning I&#39d be using wire frame and paper mâché, but I had originally planned to use plywood for the clock due to my familiarity with the material.",
+                "After talking with the head of my school&#39s makerspace and my instructor, I determined that plywood of the size I needed would&#39ve been out of budget and difficult to transport. I instead decided to use foam, so I bought the largest piece that would fit in my makerspace&#39s ShopBot CNC machine, which is shown in the background. While setting up the model and toolpathing in CAD, I was also beginning the torso wiring for the statue. It was around this time where I decided to switch the design from a horizontal clock to a vertical one.",
+                "After creating the toolpathing for cutting and engraving the clock, I ran the ShopBot.",
+                "I had to use a couple of tools to get the geometry I was looking for, as there were some areas where the sharp edges of the numerical engravings didn&#39t match the clock&#39s rounded frame.",
+                "This was the final result of the printed clock after a bit of cleaning and deburring. I decided against designing the hands directly into the clock so I could have some flexibility in their placement.",
+                "With the clock made, I focused my remaining time on the statue. I found that tin foil helped for covering those areas of the frame with minimal wire, but after putting paper mâché over the frame, I saw that it was difficult to hide the wrinkles. When attempting to smooth out the statue, I realized that paper mâché is difficult to cut or sand, which caused difficulty when refining.",
+                "My solution to allow more detail to the state was to apply a thin layer of plaster over the statue. Not only this allow me to cut and sand the surface more easily, but it also allowed me to keep the statue from bending as I moved it. It would later come in handy for mounting the statue.",
+                "After completing the statue, I mounted it to the clock. I encountered a couple small issues during this phase that caused me to adjust the design, such as the plaster making the statue too heavy for the supports I had planned to use. The hands in specific were heavy relative to their wire mounts, so during presentation I removed them to prevent them from falling and hitting someone. Still, this project was my first time working with CNC machines outside of just cutting profiles, and teaching myself how to create more complex pathing was a boon for future projects in rocketry."
+            ]'>
+            
+            <div class="carousel-track">
+                <button class="arrow left">‹</button>
+                <img class="carousel-img" src="media/ClockArtProject/IMG_3612.jpg" alt="Carousel Image">
+                <button class="arrow right">›</button>
+            </div>
+    
+            <div class="caption"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Alex Key</p>
+    </footer>
+</body>
+</html>

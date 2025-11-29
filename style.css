@@ -115,6 +115,9 @@ span {
 body.arcade header {
     --header-image: url('media/ArcadeMachine/IMG_5900.jpg');
 }
+body.clock header {
+    --header-image: url('media/ClockArtProject/FinalPiece.png');
+}
 
 
 /* ---------------- */
@@ -126,7 +129,6 @@ body.arcade header {
     left: 20px;
     z-index: 1000;
 }
-
 .back-arrow a {
     text-decoration: none;
     color: #fff;
@@ -137,7 +139,6 @@ body.arcade header {
     border-radius: 8px;
     transition: background 0.2s ease;
 }
-
 .back-arrow a:hover {
     background: rgba(0,0,0,0.7);
 }
@@ -160,50 +161,6 @@ body.arcade header {
 #menu-overlay.active {
   opacity: 1;
   pointer-events: all;
-}
-
-/* ---------------- */
-/* MOBILE DROPDOWN  */
-/* ---------------- */
-
-#mobile-menu {
-  position: absolute;
-  top: 90px;
-  right: 20px;
-  width: 220px;
-  padding: 20px;
-  border-radius: 15px;
-  background: rgba(20,20,30,0.70);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-
-  transform: translateY(-20px);
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.35s ease;
-  z-index: 1201;
-}
-
-/* Visible state */
-#mobile-menu.active {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-#mobile-menu a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
-  transition: color 0.2s ease;
-}
-#mobile-menu a:hover {
-  color: #00c3ff;
 }
 
 .hidden { display: none; }
@@ -245,7 +202,7 @@ body.arcade header {
   color: #ccc;
 }
 .section-text ul {
-    margin-left: 1.5em;
+    margin-left: 2em;
 }
 .section-image {
   flex: 0 0 40%;
@@ -312,7 +269,7 @@ body.arcade header {
     background-image: url('media/ArcadeMachine/IMG_5900.jpg');
 }
 .project2 {
-    background-image: url('media/project2.jpg');
+    background-image: url('media/ClockArtProject/FinalPiece.png');
 }
 .project3 {
     background-image: url('media/project3.jpg');
