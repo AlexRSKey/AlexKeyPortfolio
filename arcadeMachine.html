@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEDD Arcade Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>FEDD Arcade Machine</h1>
+        <div id="hamburger" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="menu-overlay"></div>
+        <nav id="mobile-menu" class="hidden">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+
+    <!-- Project Details Container -->
+    <div class="container">
+        <div class="section-text">
+            <p>Every year, NC State University hosts the First Year Engineering Design Day (FEDD). During this event, first year engineering students come together to present a project they've designed and built over the semester. The public is then invited to view and interact with these projects, testing durability in addition to being judged by a panel of judges.</p>
+            <p>My team's category was to build an Arcade Machine. Since an arcade machine can mean a variety of devices, we were given various constraints, such as:</p>
+            <ul>
+                <li>A $40 budget</li>
+                <li>Needs a mechanism for counting game score (either physical or electronic)</li>
+                <li>Game must be portable</li>
+                <li>Game must allow at least one action involving the skill of the player</li>
+                <li>Game dimensions must be no more than 2' x 3' x 3'</li>
+                <li>Game must be considered safe (no projectiles, explosives, etc.)</li>
+            </ul>
+            <p>While this was a team project, each of our team members concentrated on what we were best at. As such, I did not have any involvement in the programming or wiring of the electronic scoring system, only designing and building the housing.</p>
+        </div>
+    </div>
+
+    <!-- Carousel Container -->
+    <div class="container">
+        <div class="carousel-container"
+            data-carousel
+            data-images='[
+                "media/Arcade Machine/ArcadeMachineCAD.png",
+                "media/Arcade Machine/IMG_4893.jpg",
+                "media/Arcade Machine/IMG_5465.jpg",
+                "media/Arcade Machine/IMG_5472.jpg",
+                "media/Arcade Machine/IMG_5457.jpg",
+                "media/Arcade Machine/IMG_5684.jpg",
+                "media/Arcade Machine/IMG_5387.jpg",
+                "media/Arcade Machine/IMG_5629.jpg",
+                "media/Arcade Machine/IMG_5642.jpg",
+                "media/Arcade Machine/IMG_2586.jpg"
+            ]'
+            data-captions='[
+                "After some initial brainstorming, we decided on making a sort of pinball/skee-ball hybrid. Even though projectiles were banned in the project requirements, we were able to get an exception as we designed a protective barrier into the game that would prevent the balls from launching outside of the machine. While we split our group so that two of the members were working on programming and wiring the electronic scoring system, the other team member and I began designing the machine in SolidWorks. This is an earlier design from before we encountered some manufacturing errors with the housing and had to make edits. While my teammate created the CAD for the launcher, I designed the housing based on our material limitations.",
+                "Due to the tight budget and the price of electronics, we decided to source our plywood from local labortories on our engineering campus who were giving away wood they could not use anymore. Once we got the wood to the loading zone, though, we discovered it was too big to fit in my car for transportation, and had to cut the wood. This led to the material limitations mentioned.",
+                "With the wood cut small enough to transport, I was then able to use shop tools like a circular saw and bandsaw to cut the pieces to size. For the backboard, we needed the holes to be the exact size so that our later 3D printed tubes would fit. To get the precise geometry we needed, I created a tool path from the geometry profile, and cut the piece out on a ShopBot CNC Machine.",
+                "This was the final cut of the backboard. There are noticeably less holes than the original design, as later CAD showed that the tubes for the holes would collide with eachother if we used the amount of holes originally intended.",
+                "With the backboard cut, we could then 3D print the tubing for our holes. My teammate designed the tubes and sent them to me to print. After an initial failed print, we realized that the resolution of the printers available to us wouldn&#39;t work with the way we were printing, as they were causing the tubes to be slightly too small for easy rolling. As such, we had to split the tubes and print them in halves.",
+                "After printing all the tubes, we mounted them to the backboard inside the machine. Since each hole had a different value in the point system, we had to attach microswitches to each tube. The switches were placed at the bottom of the tube where the balls were funneled into a narrow space and could not miss the switches.",
+                "The next step was to create a return system for the balls. We initially designed this bay for the balls to roll into, and added a shallow ramp in the bottom of the machine so that the balls would roll naturally to the bottom. There was one final microswitch placed along the ramp to track how many balls the player had been used, since we decided our other designs for preventing the user from continuously launching balls had too many mechanical issues. With the microswitch, we just counted until 10 balls had been launched, then saved the high score and restarted the game.",
+                "Finally, we needed to paint the machine and assemble the remaining components. We decided on a space theme where each of the holes was wormholes, and I painted both the black sky and wormholes. We then mounted the launcher and glued the acrylic in place.",
+                "This was the final arcade machine. We discovered that the game was more difficult than initially expected as the distance between the balls and holes was incredibly short due to our space constraints. All holes were still reachable, and the challenge was actually attractive to those who stopped to play. The board in the bottom was angled correctly such that missed balls rolled down to the ramp without adding points, which had been our only remaining concern as during some early tests the angle hadn&#39;t been steep enough. The microswitches connected to the raspberry pi used for scoring worked as expected and output the correct points and highscore to the LED screen in the front, though we did run into some issues with receiving power halfway through the event.",
+                "In the end, our team ended up winning first place in the category! As one of my first projects in college, this was definitely a wakeup call to the limitations of budget, since we had difficulty sourcing some of our non-electronic materials. It also helped us recognize the value of precision as we were installing the ramps; too shallow meant the balls would not have enough momentum to trigger the microswitches, and too steep meant the ramp would hit the bottom of the machine before reaching the ball return. Space constraints was also not something I had to consider in the past, but the reality prepared me for similar issues in hobby rocketry and, eventually, my career."
+            ]'>
+            
+            <div class="carousel-track">
+                <button class="arrow left">‹</button>
+                <img class="carousel-img" src="media/Arcade Machine/ArcadeMachineCAD.png" alt="Carousel Image">
+                <button class="arrow right">›</button>
+            </div>
+    
+            <div class="caption"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Alex Key</p>
+    </footer>
+</body>
+</html>

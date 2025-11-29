@@ -199,7 +199,9 @@ span {
 
 .hidden { display: none; }
 
-/* Containers */
+/* ---------------- */
+/* SITE CONTAINERS  */
+/* ---------------- */
 .container {
   width: 90%;
   max-width: 90%;
@@ -253,9 +255,55 @@ span {
   box-shadow: 0 10px 30px rgba(0,0,0,0.9);
 }
 
-/* Reversed section where the image is on the right */
-.section.reverse {
-  flex-direction: row-reverse;
+/* ---------------- */
+/* PROJECT BLOCKS  */
+/* ---------------- */
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.project-block {
+    flex: 1 1 30%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-block::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); /* dark overlay for readability */
+    border-radius: 12px;
+}
+.project-block span {
+    position: relative;
+    z-index: 1; /* ensures text is above overlay */
+}
+.project-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Individual project block images */
+.project1 {
+    background-image: url('media/Arcade Machine/IMG_5900.jpg');
+}
+.project2 {
+    background-image: url('media/project2.jpg');
+}
+.project3 {
+    background-image: url('media/project3.jpg');
 }
 
 /* Footer */
@@ -267,49 +315,77 @@ footer {
   color: #ccc;
 }
 
-/* Portfolio Carousel */
+/* ----------------- */
+/* CAROUSEL GRAPHICS */
+/* ----------------- */
 .carousel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 90%;
+    margin: 40px auto;
 }
 .carousel-container img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
-  transition: transform 0.4s ease, opacity 0.4s ease;
+    max-height: 600px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.carousel-track {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  border: none;
-  color: white;
-  font-size: 30px;
-  padding: 10px 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.arrow:hover { background: rgba(0,0,0,0.8); }
+.arrow:hover {
+    background: rgba(0,0,0,0.7);
+}
 .left { left: 10px; }
 .right { right: 10px; }
 .caption {
-  text-align: center;
-  margin-top: 12px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #00c3ff;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-/* Mobile Responsive */
+/* ----------------- */
+/* MOBILE RESPONSIVE */
+/* ----------------- */
 @media (max-width: 800px) {
-  .section { flex-direction: column; }
-  .section-image, .section-text { flex: 1 1 100%; padding: 10px; }
-  header h1 { font-size: 2.5rem; }
+    .section { flex-direction: column; }
+    .section-image, .section-text { flex: 1 1 100%; padding: 10px; }
+    header h1 { font-size: 2.5rem; }
+    .project-block { flex: 1 1 100%; }
+
+    /* Mobile Responsive for Portfolio Carousel */
+    .carousel-container img {
+        max-height: 350px;
+        width: 90%;
+    }
+    .arrow {
+        font-size: 24px;
+        padding: 8px 12px;
+    }
+    .caption {
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+
 }

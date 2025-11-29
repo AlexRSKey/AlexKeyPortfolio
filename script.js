@@ -72,7 +72,7 @@ function setupCarousel(carousel) {
     let index = 0;
 
     const imgElement = carousel.querySelector(".carousel-img");
-    const captionElement = carousel.querySelector(".carousel-caption");
+    const captionElement = carousel.querySelector(".caption");
 
     const leftBtn = carousel.querySelector(".left");
     const rightBtn = carousel.querySelector(".right");
