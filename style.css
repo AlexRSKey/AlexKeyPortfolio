@@ -202,7 +202,7 @@ span {
 /* Containers */
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 90%;
   margin: 40px auto;
   background: #1a1a27;
   padding: 40px;
@@ -210,37 +210,52 @@ span {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Alternating image-text sections */
+/* Sections for container contents */
 .section {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 60px;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: stretch; /* IMPORTANT — let the columns match heights */
 }
-.section:nth-child(even) .section-text { order: 2; }
-.section-image, .section-text {
-  flex: 1 1 50%;
-  padding: 20px;
-}
-.section-image img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.section-image img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.9);
+.section-text {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .section-text h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
   color: #00c3ff;
 }
 .section-text p {
   font-size: 1.1rem;
   line-height: 1.8;
+  margin-bottom: 1em;
   color: #ccc;
+}
+.section-image {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-image img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: transform 0.25s ease;
+}
+.section-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.9);
+}
+
+/* Reversed section where the image is on the right */
+.section.reverse {
+  flex-direction: row-reverse;
 }
 
 /* Footer */

@@ -15,6 +15,25 @@ document.addEventListener("scroll", () => {
   content.style.top = newTop + "%";
 });
 
+const sections = document.querySelectorAll('.section');
+sections.forEach(section => {
+  const textHeight = section.querySelector('.section-text').offsetHeight;
+  const img = section.querySelector('.section-image img');
+  img.style.height = textHeight + 'px';
+});
+
+function matchImageHeight() {
+  const sections = document.querySelectorAll('.section');
+  sections.forEach(section => {
+      const textHeight = section.querySelector('.section-text').offsetHeight;
+      const img = section.querySelector('.section-image img');
+      img.style.height = textHeight + 'px';
+  });
+}
+
+window.addEventListener('load', matchImageHeight); // Run on page load
+window.addEventListener('resize', matchImageHeight); // Run on window resize
+
 /* ----------------------------
    MOBILE HAMBURGER MENU
 ----------------------------- */
