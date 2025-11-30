@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacho Lycos 2025 Interest Launch</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="il">
+    <header>
+        <!-- Back arrow to home page -->
+        <div class="back-arrow">
+            <a href="index.html">← Home</a>
+        </div>
+        <h1>Tacho Lycos 2025 Interest Launch</h1>
+    </header>
+
+    <!-- Project Details -->
+    <div class="container">
+        <div class="section-text">
+            <p>At the beginning of every school year, the NC State High Powered Rocketry club sees an influx of new members as freshman and other upperclassmen discover the club. To increase engagement and member retention, every year we hold an <em><strong>Interest Launch</strong></em> where we relaunch an old rocket (or a rocket made from a combination of old rocket components) with some basic modifications to get new members involved. The past several years have also used this rocket to gather more data on experimental electronics systems such as our Air Brakes apogee control system and custom sensor module, FIRM.</p>
+            <p>As the Vice President and lead of the experimental team, WolfWorks Experimental (WWE), I was responsible for the redesign and coordinating the modifications to the rocket. This year, I agreed to allow our Air Brakes subteam to put their system into the avionics bay as well as our FIRM subteam into the nosecone, as both were looking for more data to refine their algorithms.</p>
+            <p>As the final vehicle was a frankensteining of components from three rockets from previous years, we named the rocket Lil Frank.</p>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container">
+        <div class="carousel-container"
+            data-carousel
+            data-images='[
+                "media/InterestLaunch/IMG_2268.jpg",
+                "media/InterestLaunch/WoodRFSCAD.png",
+                "media/InterestLaunch/IMG_3107.jpg",
+                "media/InterestLaunch/IMG_3152.jpg",
+                "media/InterestLaunch/IMG_3154.jpg",
+                "media/InterestLaunch/IMG_3108.jpg",
+                "media/InterestLaunch/IMG_3263.jpg",
+                "media/InterestLaunch/LilFrankOGRedesign.png",
+                "media/InterestLaunch/IMG_3170.jpg",
+                "media/InterestLaunch/IMG_3180.jpg",
+                "media/InterestLaunch/IMG_3322.jpg",
+                "media/InterestLaunch/ABM_0992.jpg",
+                "media/InterestLaunch/IMG_3475.jpg",
+                "media/InterestLaunch/DuplicateLilFrankOpenRocket.png",
+                "media/InterestLaunch/ABM_0988.jpg",
+                "media/InterestLaunch/ABM_0164.jpg",
+                "media/InterestLaunch/ABM_0175.jpg",
+                "media/InterestLaunch/IMG_3536.jpg",
+                "media/InterestLaunch/ABM_0282.jpg"
+            ]'
+            data-captions='[
+                "The original plan had been to use a past year&#39s rocket, Genesis, due to the fact that the rocket had already cut fin slots for the Air Brakes. The primary issue with using this rocket was the old Removable Fin System (RFS). The system was made of aluminum, which significantly reduced the rocket&#39s apogee. The lower the rocket went, the less time there would be to collect data. While we could use a larger motor for a higher apogee, the motor&#39s power was limited by its diameter, and we did not have the tools needed to cut a larger hole in the RFS centering rings.",
+                "To solve this, I determined that the most resource-efficient solution would be to rebuild the RFS, rather than replace another section of the rocket for the Air Brakes. By rebuilding it, we could replace the system with a lighter material that still met our strength requirements. I ended up choosing plywood due to its light weight, sufficient strength, and ease of manufacturing. During early manufacturing, I discovered some of the design choices made for the old RFS would not work for the new, wooden version. For example, we could not feed the screws into tapped holes on the forward plate as we could not tap holes into the wood. This lead me to change the design to use L-brackets on both the bottom and top centering rings to ensure the system was securely held to the rocket air frame.",
+                "Due to some technical issues with a software update on the CNC machine I had intentended to use, I used vectors of the parts to cut them on a ULS laser cutter.",
+                "The centering rings, stringers, and motor retainer dimensions were nearly perfect from the cut. After some minimal sanding, we epoxied the stringers together before epoxying the ends to the centering rings, held together with weights while drying. With the benefit of hindsight, I should&#39ve added slots to better align the stringers, as there were some issues with them tilting. Since I was redesigning an old system that used screws to hold the stringers in place, I did not recognize that the shallow alignment groves on the laser cut centering rings would not be sufficient to hold the stringers in place while they dried.",
+                "Despite some initial manufacturing trouble, we were able to drill some alignment holes and place dowels to help steady the pieces while they dried.",
+                "The final step was to determine ways to mount the system to the rocket&#39s fin can. While the old angle brackets were tapped, they did not feel very secure, and the new angle brackets we bought to secure the top of the system couldn&#39t be tapped. I had hoped to weld nuts directly to the brackets, like our club had done in the past, but I realized our brackets were aluminum, which, on top of being incredibly small, made them bad candidates for welding. Since I could not find other angle brackets in the size we needed, I decided to use an adhesive to mount the nuts. While I originally had members try JB Weld, it was quickly clear that JB Weld was too weak to rotational loadings to be secure. I removed all the nuts from the brackets, sanding the surfaces to prepare them before placing epoxy between the brackets and nuts. I used dowels similar to the diameter of the holes to align the nuts, since screws would be harder to remove if epoxy got stuck within the threads.",
+                "After fully assembling the new removable fin syste, we used weights to apply a force to the top centering ring, compressing the stringers as we expected the motor to. The stringers were my biggest concern for failure after running a static-structural finite element analysis, as it seemed they would buckle before any other components yielded. We did test past the expected loading, though we did not test until failure as our tight deadline did not give us room to rebuild a new system.",
+                "It was at this point that the Air Brakes team lead came to me and explained that their section of the rocket would need more space for the electronics. After some discussion, we determined we did not have any old rockets with an avionics bay large enough to house their electronics. We designed a new section in our design software, OpenRocket, to meet their requirements. The combination of the longer section needed and the subsequent low center of gravity resulted in a center of gravity that was too far back. One of our club safety standards is to have the center of gravity forward of the Air Brakes fins after motor burnout. This standard ensures there&#39s no risk of the fins causing a moment on the rocket that could flip it back towards spectators. After seeing the center of gravity was aft of the Air Brakes fin slots, I pulled airframes from different rockets in our lab until I found a shorter main parachute bay and a longer fin can that would help with the center of gravity. This combination of rockets is when this rocket earned the name, Lil Frank.",
+                "After finalizing the new design, epoxied the airframe to the coupler needed for this new section. I taught the new members how to use a dremmel, and had them cut the Air Brakes fin slots. After some initial test fits, I determined the slots were slightly too small, causing excessive friction as the fins deployed and retracted. I used the dremmel to mill out more of the tube and clean up the slots.",
+                "With the new section done, I moved on to helping the air Brakes team with electronics since they were struggling to meet the deadline. I crimped connectors for each of the ejection charges, which allowed easy connection on the field and added another location preventing static electricity from the altimeters from setting off the explosives before reaching the launch pad.",
+                "My final task was coordinating checklists, creating clear labels for our recovery systems, and organizing launch day activites. Tacho Lycos requires the use of checklists in order to ensure we don&#39t miss any steps critical for safety, and so I spent an extensive amount fo time writing Lil Frank#&39s checklist, with the document spanning over 40 pages. I also coordinated with other club leaders to split the group into two parties for transport. Our club has had a tradition for stopping at certain restaurants during launch day, but with a record number of people signed up for this launch, we felt the restaurants would not have the capacity for our entire group.",
+                "When we reached the launch field, we discovered that a plate that had been critical for inserting the Air Brakes into the Avionics and Air Brakes (AVAB) bay was left behind. This resulted in significant difficulty inserting, removing, and adjusting the AVAB module. In part, the difficulty was due to a miscommunication between the Air Brakes lead and I, and the o-ring I had vetoed was used in the AVAB module to seal the section. By the time we realized the miscommunication, it was too late to use a different solution for sealing. The insertion of the avionics bay took several hours on the field, significantly pushing back our timeline.",
+                "Upon reaching the launchpad, we discovered a continuity issue with our avionics. After checking some common causes that didn&#39t require us to disassemble the entire avionics bay, we determined that there was a wiring issue inside of the bay. After considering the time it took to simply insert the AVAB bay earlier in the day, I determined that we would not have enough time to fix the issue before the launch field closed, and made the call that we would not launch that day.",
+                "We rescheduled our launch of Lil Frank for the next available launch date, and I sat down the Air Brakes lead to discuss concerns I had about integration. We set harder deadlines to ensure we would have ample time for test fitting and integration. Unfortunately, we determined that the deadlines could not be met, so I removed the module from the rocket. I designed a new sled that contained just the avionics, which now had ample space. I also removed the connectors from all electronics aside from the batteries, as the previously mentioned electronics issue was due to a faulty connector that was pulled when trying to insert the AVAB module. I felt we had enough safety mechanisms in place that removing the connector wouldn&#39t be dangerous, and it would remove a possible failure point from the system.",
+                "With the AVAB module replaced by a simple avionics sled, the rocket&#39s weight distribution and stability were once again disturbed. When changing the OpenRocket design, I found that these issues were easily solved by replacing the AVAB bay with an old avionics bay that was shorter and lighter. The new avionics bay meant we could also remove the ballast we had needed to add to the rocket&#39s nosecone without losing our stability margin.",
+                "With the new avionics bay finished, we returned to the field. Since the avionics bay assembly was much shorter, we were on the launch pad much earlier in the day. We did encounter some minor issues on the launch pad, though both were easily fixed. One was an alignment issue that we just needed to drill a couple new holes for. The other issue actually was in the avionics bay, as a new brand of battery we were using was somehow drained despite being charged the day before. Luckily, the fix went much faster as the avionics sled was easy to remove.",
+                "During the second launch, the rocket went up without issue!",
+                "Both parachutes deployed exactly as I had programmed the altimeters, and the rocket safely reached the ground. We were then able to find the rocket using the onboard GPS.",
+                "Once we found the rocket, we confirmed all charges were blown before moving the vehicle. The rocket did not sustain notable damage, even the RFS.",
+                "After returning and disassembling the rocket, we determined the apogee to be 5,101 ft, about 200 feet from our predicted apogee, likely due to variations in the motor. Our payload, FIRM was successfully able to read data that showed similar trends to our altimeters, though at a much higher polling rate. This even allowed us to see minor changes in pressure when reaching transonic speeds, critical for future algorithm adjustments and possibly custom built flight computers."
+            ]'>
+            
+            <div class="carousel-track">
+                <button class="arrow left">‹</button>
+                <img class="carousel-img" src="media/ClockArtProject/IMG_3612.jpg" alt="Carousel Image">
+                <button class="arrow right">›</button>
+            </div>
+    
+            <div class="caption"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Alex Key</p>
+    </footer>
+</body>
+</html>
