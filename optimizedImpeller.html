@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finite Element Analysis Impeller Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="impeller">
+    <header>
+        <!-- Back arrow to home page -->
+        <div class="back-arrow">
+            <a href="index.html">← Home</a>
+        </div>
+        <h1>Finite Element Analysis Impeller Project</h1>
+    </header>
+
+    <!-- Project Details -->
+    <div class="container">
+        <div class="section-text">
+            <p>For the final project in my Applied Finite Element Analysis class, MAE 430, I was given an impeller with several variable design parameters. I was asked to analyze temperature and stress distributions, as well as conducting modal analyses on the impeller. I was then asked to use a Design of Experiment in ANSYS workbench in an attempt to optimize the impeller for minimal stress and deformation, allowing me to analyze the effects of parameters like blade height and fluid temperature on the impeller's equivalent stress. In addition to the images below, I have attached my report from the project, as well as the instructions provided for this final project.</p>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container">
+        <div class="carousel-container"
+            data-carousel
+            data-images='[
+                "media/OptimizedImpeller/ImpellerExample.png",
+                "media/OptimizedImpeller/ImpellerZ5Design.png",
+                "media/OptimizedImpeller/ImpellerConvecFaces.png",
+                "media/OptimizedImpeller/ImpellerZ5TempDist.png",
+                "media/OptimizedImpeller/ImpellerZ5Cylindrical.png",
+                "media/OptimizedImpeller/ImpellerZ5StressDist.png",
+                "media/OptimizedImpeller/InitialModeShape1Z10.png",
+                "media/OptimizedImpeller/Z5LocalSensitivity.png",
+                "media/OptimizedImpeller/GeometryStressResponse.png",
+                "media/OptimizedImpeller/Z10LocalSensitivity.png",
+                "media/OptimizedImpeller/Z10BladeHeightFluidTemp.png",
+                "media/OptimizedImpeller/Design1HarmonicStress.png",
+                "media/OptimizedImpeller/Design1HarmonicDeform.png"
+            ]'
+            data-captions='[
+                "I was initially provided with this impeller model. I was asked to conduct Design of Experiments (DOEs) on this impeller and a similar impeller with 5 blades instead of 10. My goal was to analyze the stress on the impeller and how to minimize it with the range of geometric conditions provided. I was also given a range of fluid temperatures and static pressures experienced by the impeller, as well as the impellers rotational velocity.",
+                "I designed the impellers in SpaceClaim, the modeling software in ANSYS Workbench. This software also made it easier to parameterize the geometry.",
+                "In a Steady-State thermal simulation, I applied a convection boundary condition for the water to the impeller&#39s eye, blades, and face. Due to only having a rudimentary understanding of how fluids flow through the impellers, I had to make some assumptions about the film coefficient and convective boundary conditions, especially due to only being provided with limited information.",
+                "This was my resulting temperature distribution using my initial conditions set before the DOE was ran.",
+                "For my static-structural loadings, I applied a static pressure to the same surfaces as the water&#39s convection boundary condition. To model the shaft the impeller is rotating with, I applied a cylindrical boundary condition to the eye of the impeller, fixing it in the radial, tangential, and axial directions. Since the Rotational Velocity boundary condition in ANSYS Mechanical simulates the stress due to centripetal forces without actually trying to rotate the part, the tangential constraint would not create an unrealistic boundary condition.",
+                "This was my resulting stress distribution using my initial conditions set before the DOE was ran.",
+                "After setting an appropriate structural damping coefficient for the material, I ran a modal analysis of the impeller and looked at the distribution of the first mode shape for both the 5 and 10 blade impeller designs.",
+                "With initial simulations ran, I designated the allowable ranges for the variables in my DOE. My 5 blade DOE showed the impeller&#39s geometry to have the most significant effect on the stress experienced by the impeller, as well as the frequency of the first mode and the deformation at that frequency.",
+                "While both the blade height and base thickness of the 5-blade impeller had similar effects when increasing or decreasing their respective dimensions, response surfaces like this showed the heavier weight of the blade height, with minimal irregularities in their trends.",
+                "The 10-blade impeller was much more varied in its sensitivity to the design parameters. Temperature played a much more critical factor to the actual stress experienced, though more significant variation in the frequency of the first mode shape impacted the equivalent stress at various operating conditions.",
+                "Unlike the 5-blade impeller, the 10-blade impeller showed more irregularity in the shape of its behavior. This response surface shows how the higher fluid temperature resulted in larger deformations at the first mode shape, corresponding to the increasing equivalent stress with temperature. The blade height, though, didn&#39t exhibit similarly uniform behaviors as it increased, instead varying with the temperature to cause a sort of valley closer to the middle of the response surface.",
+                "Observing the different stresses in my DOEs, I determined the 10-blade impeller to experience significantly less stress. I then used the Response Surface Optimizer from ANSYS Workbench to determine some of the best design candidates to minimize stress and deformation. I performed harmonic analyses on each of the designs, applying their calculated excitation pressures to the same surfaces for the static pressure condition used earlier (with the exception of the impeller&#39s eye). This was the resulting stress distribution at the blade passing frequency for the only design that met predefined separation margin requirements, showing the locations where reinforcements would be most important, though the low stresses indicate such reinforcements aren&#39t necessary at all.",
+                "This was the corresponding harmonic deformation at the blade passing frequency of the final design."
+            ]'>
+            
+            <div class="carousel-track">
+                <button class="arrow left">‹</button>
+                <img class="carousel-img" src="media/OptimizedImpeller/ImpellerExample.png" alt="Carousel Image">
+                <button class="arrow right">›</button>
+            </div>
+    
+            <div class="caption"></div>
+        </div>
+    </div>
+
+    <!-- Report -->
+    <div class="container">
+        <h2>Full Report</h2>
+        <embed src="media/OptimizedImpeller/MAE_430__Final_Project.pdf" width="100%" height="600px" type="application/pdf">
+    </div>
+
+    <!-- Instructions -->
+    <div class="container">
+        <h2>Project Instructions</h2>
+        <embed src="media/OptimizedImpeller/MAE 430-Project_2025.pdf" width="100%" height="600px" type="application/pdf">
+    </div>
+
+    <footer>
+        <p>© 2025 Alex Key</p>
+    </footer>
+</body>
+</html>

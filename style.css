@@ -124,7 +124,7 @@ body.il header {
     --header-image: url('media/InterestLaunch/ABM_0988.JPG');
 }
 body.impeller header {
-    /* TODO */
+    --header-image: url('media/OptimizedImpeller/Design1HarmonicStress.png');
 }
 
 
@@ -292,7 +292,7 @@ body.impeller header {
     background-image: url('media/InterestLaunch/ABM_0988.JPG');
 }
 .project4 {
-    /* TODO */
+    background-image: url('media/OptimizedImpeller/Design1HarmonicStress.png');
 }
 
 /* Footer */
