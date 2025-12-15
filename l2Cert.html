@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finite Element Analysis Impeller Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="mach3">
+    <header>
+        <!-- Back arrow to home page -->
+        <div class="back-arrow">
+            <a href="index.html">← Home</a>
+        </div>
+        <h1>Mach 3 Hobby Rocket</h1>
+    </header>
+
+    <!-- Project Details -->
+    <div class="container">
+        <div class="section-text">
+            <p>Every year, the NCSU High Powered Rocketry Club's experimental team selects a new, experimental project attempting something we&#39ve never done before. This year, as the team lead I was responsible for leading the team&#39s 2025-2026 project: a high powered rocket capable of reaching mach 3.</p>
+            <p>With this project come a variety of challenges, the biggest being the flight ceiling. As an east coast team, our flight ceilings are significantly limited, with the highest ceiling we can afford to travel to being just 17,000 ft in Bayboro, NC. As such, the challenge isn&#39t just surviving the aerodynamic loadings at Mach 3, but designing a rocket that can do so at altitudes lower than almost all hobby rockets that&#39ve reached such speeds.</p>
+            <p>This project is <em>still ongoing</em>, meaning that this page will continue to be updated with images until approximately April, 2026.</p>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container">
+        <div class="carousel-container"
+            data-carousel
+            data-images='[
+                "media/Mach3/Mach3DesignAttempt54mm.png",
+                "media/Mach3/Mach3OpenRocketDesign.png",
+                "media/Mach3/IMG_3593.JPG",
+                "media/Mach3/cleanedFins.png",
+                "media/Mach3/IMG_3613.JPG",
+                "media/Mach3/IMG_3672.JPG",
+                "media/Mach3/comingSoon.png"
+            ]'
+            data-captions='[
+                "At its core, the biggest challenge with this rocket is making a design that minimizes drag. As such, my first design attempt used OpenRocket to make a 54mm sub-minimum diameter vehicle, minimizing the cross-sectional area and the subsequent drag.",
+                "To reach the desired speed without breaking the flight ceiling, I needed to consider solid propellant motors with high average thrust but low impulse. After running simulations on the 54mm design, I discovered there were no motors available that could reach Mach 3 without breaking the flight ceiling. As such, I redesigned using a 38mm diameter rocket, where I was able to achieve the desired speed while reaching only about 15,000 ft with a Aerotech J825R motor.",
+                "I then moved on to manufacture light-weight composite fins in-house, trying to design composites that could withstand the aerodynamic loadings while minimizing their weight. I determined carbon fiber to be the best material for the fin strength-to-weight ratio, so I designed two types of composites with fiber orientations designed to maximize the strength against drag and corrective forces. One of these fin designs was pure carbon-fiber, whereas the other was carbon fiber laid across plywood cores in an attempt to reduce fin weight even further. I led my team in laying up four carbon fiber fins, using an epoxy matrix and vacuum bagging the fins to remove bubbles and compressthe layers.",
+                "Using a dremmel and belt sander, I then cleaned up the cured fins. These were not the final fins, but rather test pieces I wanted to perform destructive testing on to ensure sufficient normal and bending strengths. The fins also served as a great chance for new member in the club to learn about composite layup techniques. Structural testing of the fins is planned for the end of December, 2025.",
+                "In addition to the test fins, I also created a test piece of the rocket&#39s nosecone. Due to the small diameter of the rocket, I needed a nosecone to test fit the avionics bay into, ensuring sufficient space for the electronics. The original design used a 10:1 length to diameter nosecone, which was more efficient than a combined nosecone and airframe and long enough for the electronics and parachute. Using a slightly scaled down mold made in Solidworks, I 3D printed a mold to lay fiberglass sleeves on. While carbon fiber had a superior strength-to-weight ratio, it did not have the RF transparency needed for the onboard tracker, making fiberglass the next best material option.",
+                "After the epoxy matrix of the nosecone dried, I applied a gloss coat over top of the nosecone. While this will slightly increase the weight, the significantly reduced skin friction is worth the additional weight due to its drastic effect on aerodynamic performance according to OpenRocket and RasAero simulations. Similar to the fins, this nosecone is built for structural testing, not flight. I will be performing compressive testing to failure in early 2026 after test fitting the avionics, though I&#39ll be updating the mold release strategy used after difficulty removing the 3D-printed mold of this test piece.",
+                "This project is still in development, and more pictures will be added as the project progresses. The vehicle&#39s test launch is currently scheduled for February, 2026, where the vehicle will be tested at Mach 2 to ensure structural integrity before its full flight in March, 2026."
+            ]'>
+            
+            <div class="carousel-track">
+                <button class="arrow left">‹</button>
+
+                <div class="carousel-viewport">
+                    <img class="carousel-img" src="media/Mach3/Mach3DesignAttempt54mm.png" alt="Carousel Image">
+                </div>
+                
+                <button class="arrow right">›</button>
+            </div>
+    
+            <div class="caption"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Alex Key</p>
+    </footer>
+</body>
+</html>
