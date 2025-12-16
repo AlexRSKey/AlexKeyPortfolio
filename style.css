@@ -129,6 +129,9 @@ body.impeller header {
 body.mach3 header {
     --header-image: url('media/Mach3/Mach3OpenRocketDesign.png');
 }
+body.l2 header {
+    --header-image: url('media/L2Rocket/IMG_0288.JPG');
+}
 
 
 /* ---------------- */
@@ -300,6 +303,9 @@ body.mach3 header {
 .project5 {
     background-image: url('media/Mach3/Mach3OpenRocketDesign.png');
 }
+.project6 {
+    background-image: url('media/L2Rocket/IMG_0288.JPG');
+}
 
 /* Footer */
 footer {
@@ -321,15 +327,6 @@ footer {
     max-width: 90%;
     margin: 20px auto;
 }
-.carousel-container img {
-    max-width: 100%;
-    max-height: 600px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    border-radius: 12px;
-    transition: transform 0.4s ease, opacity 0.4s ease;
-}
 .carousel-track {
     width: 100%;
     height: 600px;
@@ -341,18 +338,18 @@ footer {
     overflow: hidden;
 }
 .carousel-viewport {
-    height: 600px;
     width: 100%;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .carousel-viewport img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 .arrow {
     position: absolute;

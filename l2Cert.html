@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finite Element Analysis Impeller Project</title>
+    <title>TRA Level 2 Certification Rocket</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
-<body class="mach3">
+<body class="l2">
     <header>
         <!-- Back arrow to home page -->
         <div class="back-arrow">
             <a href="index.html">← Home</a>
         </div>
-        <h1>Mach 3 Hobby Rocket</h1>
+        <h1>TRA Level 2 Certification Rocket</h1>
     </header>
 
     <!-- Project Details -->
     <div class="container">
         <div class="section-text">
-            <p>Every year, the NCSU High Powered Rocketry Club's experimental team selects a new, experimental project attempting something we&#39ve never done before. This year, as the team lead I was responsible for leading the team&#39s 2025-2026 project: a high powered rocket capable of reaching mach 3.</p>
-            <p>With this project come a variety of challenges, the biggest being the flight ceiling. As an east coast team, our flight ceilings are significantly limited, with the highest ceiling we can afford to travel to being just 17,000 ft in Bayboro, NC. As such, the challenge isn&#39t just surviving the aerodynamic loadings at Mach 3, but designing a rocket that can do so at altitudes lower than almost all hobby rockets that&#39ve reached such speeds.</p>
-            <p>This project is <em>still ongoing</em>, meaning that this page will continue to be updated with images until approximately April, 2026.</p>
+            <p>While I was able to launch class two hobby rockets before this project, Tripoli Rocketry Association (TRA) requires a Level 2 certification in order to fly rockets with motors larger than an I class.</p>
+            <p>To earn my level 2 certification, I needed to fly a rocket built by me alone with a J through L class motor. My recovery needed to deploy as expected, and I needed to pass a written exam.</p>
+            <p>Due to a limited budget, I decided to modify my TRA Level 1 certification rocket to use a dual deploy recovery method.</p>
         </div>
     </div>
 
@@ -30,29 +30,39 @@
         <div class="carousel-container"
             data-carousel
             data-images='[
-                "media/Mach3/Mach3DesignAttempt54mm.png",
-                "media/Mach3/Mach3OpenRocketDesign.png",
-                "media/Mach3/IMG_3593.JPG",
-                "media/Mach3/cleanedFins.png",
-                "media/Mach3/IMG_3613.JPG",
-                "media/Mach3/IMG_3672.JPG",
-                "media/Mach3/comingSoon.png"
+                "media/L2Rocket/L2OpenRocket.png",
+                "media/L2Rocket/IMG_0252.JPG",
+                "media/L2Rocket/IMG_3268.JPG",
+                "media/L2Rocket/IMG_0273.gif",
+                "media/L2Rocket/IMG_0275.gif",
+                "media/L2Rocket/IMG_0219.JPG",
+                "media/L2Rocket/IMG_0220.JPG",
+                "media/L2Rocket/AVBay.png",
+                "media/L2Rocket/IMG_0276.JPG",
+                "media/L2Rocket/IMG_0287.JPG",
+                "media/L2Rocket/IMG_0288.JPG",
+                "media/L2Rocket/IMG_0298.gif"
             ]'
             data-captions='[
-                "At its core, the biggest challenge with this rocket is making a design that minimizes drag. As such, my first design attempt used OpenRocket to make a 54mm sub-minimum diameter vehicle, minimizing the cross-sectional area and the subsequent drag.",
-                "To reach the desired speed without breaking the flight ceiling, I needed to consider solid propellant motors with high average thrust but low impulse. After running simulations on the 54mm design, I discovered there were no motors available that could reach Mach 3 without breaking the flight ceiling. As such, I redesigned using a 38mm diameter rocket, where I was able to achieve the desired speed while reaching only about 15,000 ft with a Aerotech J825R motor.",
-                "I then moved on to manufacture light-weight composite fins in-house, trying to design composites that could withstand the aerodynamic loadings while minimizing their weight. I determined carbon fiber to be the best material for the fin strength-to-weight ratio, so I designed two types of composites with fiber orientations designed to maximize the strength against drag and corrective forces. One of these fin designs was pure carbon-fiber, whereas the other was carbon fiber laid across plywood cores in an attempt to reduce fin weight even further. I led my team in laying up four carbon fiber fins, using an epoxy matrix and vacuum bagging the fins to remove bubbles and compressthe layers.",
-                "Using a dremmel and belt sander, I then cleaned up the cured fins. These were not the final fins, but rather test pieces I wanted to perform destructive testing on to ensure sufficient normal and bending strengths. The fins also served as a great chance for new member in the club to learn about composite layup techniques. Structural testing of the fins is planned for the end of December, 2025.",
-                "In addition to the test fins, I also created a test piece of the rocket&#39s nosecone. Due to the small diameter of the rocket, I needed a nosecone to test fit the avionics bay into, ensuring sufficient space for the electronics. The original design used a 10:1 length to diameter nosecone, which was more efficient than a combined nosecone and airframe and long enough for the electronics and parachute. Using a slightly scaled down mold made in Solidworks, I 3D printed a mold to lay fiberglass sleeves on. While carbon fiber had a superior strength-to-weight ratio, it did not have the RF transparency needed for the onboard tracker, making fiberglass the next best material option.",
-                "After the epoxy matrix of the nosecone dried, I applied a gloss coat over top of the nosecone. While this will slightly increase the weight, the significantly reduced skin friction is worth the additional weight due to its drastic effect on aerodynamic performance according to OpenRocket and RasAero simulations. Similar to the fins, this nosecone is built for structural testing, not flight. I will be performing compressive testing to failure in early 2026 after test fitting the avionics, though I&#39ll be updating the mold release strategy used after difficulty removing the 3D-printed mold of this test piece.",
-                "This project is still in development, and more pictures will be added as the project progresses. The vehicle&#39s test launch is currently scheduled for February, 2026, where the vehicle will be tested at Mach 2 to ensure structural integrity before its full flight in March, 2026."
+                "When redesigning my level 1 certification rocket, I first returned to OpenRocket to add an avionics bay and the weight of my avionics to my simulation. I also had to increase the weight of the bulkheads, as I added hardware like PVC pipe end caps and eyebolts to the bulkheads for dual deployment. I also changed my simulated motor to an Aerotech J435, partially due to the ease of use as the motor uses a disposible casing, as well as a sufficient thrust-to-weight ratio off the launch pad.",
+                "An issue I had not caught during my initial redesign was that during my L1 certification, I had epoxied my bulkhead into the coupler. Both bulkheads for the avionics bay needed to be removable for easy insertion of the avionics sled, but since I was unable to preserve the bulkhead when removing it, I used a dremmel to mill out the old bulkhead. I milled new, stepped bulkheads as single pieces using a Shopbot CNC machine.",
+                "With the bulkheads cut, I mounted the PVC pipe end caps and eyebolts to both bulkheads, where the former were used as blast caps meant to hold black powder for in-flight separation.",
+                "After finishing my bulkheads, I loaded my parachute and black powder ejection charges to ensure the rocket would separate. I calculated the initial black powder amounts using the ideal gas law, but when separating the section containing my drogue parachute, I felt the charge was too strong and risked burning through my fame-resistant nomex cloth.",
+                "I then tested my main ejection charge, which was the perfect amount. After ejection testing, I lowered the amount of black powder in my drogue ejection charge and tested again. The second amount I used was sufficient without being excessive.",
+                "In order to ignite my ejection charges, I needed to put altimeters and batteries in my avionics bay. I purchased an EggTimer Quantum, a type of rocketry altimeter that records telemetry but requires you to solder all the components yourself. This was my first time soldering electronics to a PCB, though the altimeter was provided with instructions for where all the parts needed to go, making it relatively simple to assembly.",
+                "Unfortunately, there was an issues with the Quantum WiFi chip that prevented the altimeter from functioning. Due to my planned launch day coming before I&#39d be able to get a replacement chip, I borrowed a friend&#39s EasyMini altimeter, another COTS hobby rocketry altimeter. I received a replacement WiFi chip at a later date after the launch, and the altimeter worked perfectly when I replaced the chip.",
+                "I designed my avionics sled in SolidWorks, adding holes for heat inserts so that I could mount my altimeter and pull pin switch. I created a section for my LiPo battery and holes to secure the battery with a zip tie.",
+                "I purchased my pull pin switch commercially, and soldered wires to the switch to break the altimeter circuit until ready for launch. While the pull pin switch was designed for use with two altimeters, mI only used one altimeter since I was using a strategy called motor ejection to ensure my rocket separated if the ejection charges didn&#39t. Motor ejection is essentially loading an ejection charge on top of a motor, where the powder is ignited at a set time delay after the motor burns out.",
+                "With my avionics sled designed and assembled, I went to the field to launch my rocket. I inserted the J435 motor on the field, which didn&#39t require much assembly due to the motor type being used.",
+                "After some minor issues I encountered around connecting my batteries while ensuring the circuit was still closed, I got my rocket to the launch pad. I encountered no avionics issues on the pad.",
+                "My rocket successfully launched without any issues at takeoff. While I don&#39t have any media of the recovery or landing configurations, the parachutes deployed as expected, with the drogue parachute deploying at apogee and the main parachute at about 600 ft. After passing the written portion of the test, I successfully earned my TRA Level 2 Certification."
             ]'>
             
             <div class="carousel-track">
                 <button class="arrow left">‹</button>
 
                 <div class="carousel-viewport">
-                    <img class="carousel-img" src="media/Mach3/Mach3DesignAttempt54mm.png" alt="Carousel Image">
+                    <img class="carousel-img" src="media/L2Rocket/L2OpenRocket.png" alt="Carousel Image">
                 </div>
                 
                 <button class="arrow right">›</button>
