@@ -1,18 +1,33 @@
-/* Dark Mode and Modern Graphics CSS */
+:root {
+    --mainColor: #0a0a0f;
+    --secondaryColor: #202020;
+    --tertiaryColor: #b8b8b8;
+    --quaternaryColor: dimgrey;
+    --themeColor: #b4cef0;
+    --secondaryThemeColor: #597aa3;
+    --blendedColor: #9bb1de;
+    --filterColor: -50deg;
+
+    --mainTextColor: white;
+
+    --mainFont: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --secondaryFont: "JetBrains Mono",monospace;
+}
 
 /* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--mainFont);
 }
 
 body {
-  background: #0a0a0f;
   color: #e0e0e0;
   line-height: 1.6;
   scroll-behavior: smooth;
+  font-family: var(--mainFont);
+  background-color: var(--mainColor);
 }
 
 /* ------------------ */
@@ -252,7 +267,7 @@ body.l2 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--mainFont);
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
