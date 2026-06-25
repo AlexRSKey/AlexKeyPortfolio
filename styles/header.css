@@ -80,11 +80,9 @@ header::after {
 }
 header h1 {
   text-align: center;
-  text-transform: uppercase;
-  font-size: 65px;
+  font-size: 6em;
   letter-spacing: 2px;
   text-shadow: 0 4px 12px rgba(0,0,0,0.75);
-  font-family: 'Montserrat', sans-serif;
 }
 
 

@@ -54,6 +54,29 @@
 .caption {
     text-align: center;
     margin-top: 12px;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: x-large;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+
+
+/* ----------------- */
+/* MOBILE RESPONSIVE */
+/* ----------------- */
+@media (max-width: 800px) {
+    /* Mobile Responsive for Portfolio Carousel */
+    .carousel-container img {
+        max-height: 350px;
+        width: 90%;
+    }
+    .arrow {
+        font-size: 24px;
+        padding: 8px 12px;
+    }
+    .caption {
+        font-size: 1rem;
+        padding: 0 5px;
+        line-height: 1.8;
+    }
 }
