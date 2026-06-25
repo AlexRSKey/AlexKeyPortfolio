@@ -1,0 +1,108 @@
+.button1 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4px;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        90deg,
+        var(--secondaryThemeColor),
+        var(--themeColor)
+    );
+
+    text-decoration: none;
+    overflow: hidden;
+
+    flex: 1 1 0;
+    width: fit-content;
+}
+
+.button1span {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    min-height: clamp(50px, 8vw, 60px);
+    padding: clamp(10px, 2vw, 14px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--mainColor);
+    border-radius: 8px;
+
+    color: var(--themeColor);
+    font-family: var(--secondaryFont);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+
+    overflow: hidden;
+}
+
+.button1span::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: var(--themeColor);
+
+    transform: scaleX(0);
+    transform-origin: left center;
+
+    transition: transform 0.3s ease;
+
+    z-index: -1;
+}
+
+.button1:hover .button1span::before {
+    transform: scaleX(1);
+}
+
+.button1:hover .button1span {
+    color: var(--mainColor);
+}
+
+.button1:focus {
+    outline: none;
+}
+
+.button1:focus .button1span::before {
+    transform: scaleX(1);
+}
+
+.button1:focus .button1span {
+    color: var(--mainColor);
+}
+
+.button1:hover {
+    transform: translateY(-2px);
+}
+
+.button1:active {
+    transform: translateY(0);
+}
+
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.button1span svg {
+  width: clamp(20px, 4vw, 28px);
+  height: clamp(20px, 4vw, 28px);
+
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 0;
+
+  transition: inherit;
+}
